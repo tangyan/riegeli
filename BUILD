@@ -14,6 +14,7 @@ go_library(
         "writer.go",
     ],
     importpath = "riegeli",
+    visibility = ["//visibility:public"],
     deps = [
         ":records_metadata_go_proto",
         "@com_github_datadog_zstd//:go_default_library",
